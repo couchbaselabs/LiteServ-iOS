@@ -1,0 +1,1138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93366CE11D56D1B90047CBD3 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DAA1D55642C0017086E /* libsqlcipher.a */; };
+		93366CE41D56DC030047CBD3 /* LiteServ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCF1D5566CD0017086E /* LiteServ.swift */; };
+		93366CE51D56DC030047CBD3 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352991D5669470017086E /* GCDWebServerRequest.m */; };
+		93366CE61D56DC030047CBD3 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A91D5669470017086E /* GCDWebServerErrorResponse.m */; };
+		93366CE71D56DC030047CBD3 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A21D5669470017086E /* GCDWebServerMultiPartFormRequest.m */; };
+		93366CE81D56DC030047CBD3 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352931D5669470017086E /* GCDWebServerConnection.m */; };
+		93366CE91D56DC030047CBD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934D881D55628F0017086E /* ViewController.swift */; };
+		93366CEA1D56DC030047CBD3 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AD1D5669470017086E /* GCDWebServerStreamedResponse.m */; };
+		93366CEB1D56DC030047CBD3 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352911D5669470017086E /* GCDWebServer.m */; };
+		93366CEC1D56DC030047CBD3 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529E1D5669470017086E /* GCDWebServerDataRequest.m */; };
+		93366CED1D56DC030047CBD3 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A41D5669470017086E /* GCDWebServerURLEncodedFormRequest.m */; };
+		93366CEE1D56DC030047CBD3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCE1D5566CD0017086E /* Config.swift */; };
+		93366CEF1D56DC030047CBD3 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 93934DC71D55661B0017086E /* Test.m */; };
+		93366CF01D56DC030047CBD3 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A01D5669470017086E /* GCDWebServerFileRequest.m */; };
+		93366CF11D56DC030047CBD3 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529B1D5669470017086E /* GCDWebServerResponse.m */; };
+		93366CF21D56DC030047CBD3 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AB1D5669470017086E /* GCDWebServerFileResponse.m */; };
+		93366CF31D56DC030047CBD3 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A71D5669470017086E /* GCDWebServerDataResponse.m */; };
+		93366CF41D56DC030047CBD3 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352951D5669470017086E /* GCDWebServerFunctions.m */; };
+		93366CF51D56DC030047CBD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934D861D55628F0017086E /* AppDelegate.swift */; };
+		93366CF71D56DC030047CBD3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DCA1D5566490017086E /* JavaScriptCore.framework */; };
+		93366CF81D56DC030047CBD3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DC31D5565520017086E /* libc++.tbd */; };
+		93366CF91D56DC030047CBD3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D9A1D5563710017086E /* CFNetwork.framework */; };
+		93366CFA1D56DC030047CBD3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D9F1D5563970017086E /* Security.framework */; };
+		93366CFB1D56DC030047CBD3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D9D1D55638D0017086E /* SystemConfiguration.framework */; };
+		93366CFC1D56DC030047CBD3 /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB31D5564F60017086E /* CouchbaseLiteListener.framework */; };
+		93366CFD1D56DC030047CBD3 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB21D5564F60017086E /* CouchbaseLite.framework */; };
+		93366CFE1D56DC030047CBD3 /* libCBLForestDBStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB41D5564F60017086E /* libCBLForestDBStorage.a */; };
+		93366CFF1D56DC030047CBD3 /* libCBLJSViewCompiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB51D5564F60017086E /* libCBLJSViewCompiler.a */; };
+		93366D011D56DC030047CBD3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DC11D5565450017086E /* libz.tbd */; };
+		93366D031D56DC030047CBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93934D8D1D55628F0017086E /* Assets.xcassets */; };
+		93366D041D56DC030047CBD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93934D8A1D55628F0017086E /* Main.storyboard */; };
+		93366D0C1D56DC730047CBD3 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB61D5564F60017086E /* libsqlcipher.a */; };
+		9352E2BF1D553B3B00BF37E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352E2BE1D553B3B00BF37E8 /* AppDelegate.swift */; };
+		9352E2C11D553B3B00BF37E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352E2C01D553B3B00BF37E8 /* ViewController.swift */; };
+		9352E2C41D553B3B00BF37E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9352E2C21D553B3B00BF37E8 /* Main.storyboard */; };
+		9352E2C61D553B3B00BF37E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9352E2C51D553B3B00BF37E8 /* Assets.xcassets */; };
+		9352E2C91D553B3B00BF37E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9352E2C71D553B3B00BF37E8 /* LaunchScreen.storyboard */; };
+		9352E2E11D553DCA00BF37E8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E01D553DCA00BF37E8 /* libsqlite3.tbd */; };
+		9352E2E31D553DD000BF37E8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E21D553DD000BF37E8 /* libc++.tbd */; };
+		9352E2E51D553DD600BF37E8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E41D553DD600BF37E8 /* libz.tbd */; };
+		9352E2E71D553DDC00BF37E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E61D553DDC00BF37E8 /* Security.framework */; };
+		9352E2E91D553DE300BF37E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E81D553DE300BF37E8 /* SystemConfiguration.framework */; };
+		9352E2EB1D553DF000BF37E8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2EA1D553DF000BF37E8 /* CFNetwork.framework */; };
+		93934D7C1D5554F50017086E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D7B1D5554F50017086E /* JavaScriptCore.framework */; };
+		93934D871D55628F0017086E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934D861D55628F0017086E /* AppDelegate.swift */; };
+		93934D891D55628F0017086E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934D881D55628F0017086E /* ViewController.swift */; };
+		93934D8C1D55628F0017086E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93934D8A1D55628F0017086E /* Main.storyboard */; };
+		93934D8E1D55628F0017086E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93934D8D1D55628F0017086E /* Assets.xcassets */; };
+		93934D9B1D5563710017086E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D9A1D5563710017086E /* CFNetwork.framework */; };
+		93934D9E1D55638D0017086E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D9D1D55638D0017086E /* SystemConfiguration.framework */; };
+		93934DA01D5563970017086E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D9F1D5563970017086E /* Security.framework */; };
+		93934DA21D5563A60017086E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA11D5563A60017086E /* libsqlite3.tbd */; };
+		93934DB81D5564F60017086E /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB21D5564F60017086E /* CouchbaseLite.framework */; };
+		93934DBA1D5564F60017086E /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB31D5564F60017086E /* CouchbaseLiteListener.framework */; };
+		93934DBC1D5564F60017086E /* libCBLForestDBStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB41D5564F60017086E /* libCBLForestDBStorage.a */; };
+		93934DBE1D5564F60017086E /* libCBLJSViewCompiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DB51D5564F60017086E /* libCBLJSViewCompiler.a */; };
+		93934DC21D5565450017086E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DC11D5565450017086E /* libz.tbd */; };
+		93934DC41D5565520017086E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DC31D5565520017086E /* libc++.tbd */; };
+		93934DC81D55661B0017086E /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 93934DC71D55661B0017086E /* Test.m */; };
+		93934DCB1D5566490017086E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DCA1D5566490017086E /* JavaScriptCore.framework */; };
+		93934DD01D5566CD0017086E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCE1D5566CD0017086E /* Config.swift */; };
+		93934DD11D5566CD0017086E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCE1D5566CD0017086E /* Config.swift */; };
+		93934DD21D5566CD0017086E /* LiteServ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCF1D5566CD0017086E /* LiteServ.swift */; };
+		93934DD31D5566CD0017086E /* LiteServ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCF1D5566CD0017086E /* LiteServ.swift */; };
+		939352AE1D5669470017086E /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352911D5669470017086E /* GCDWebServer.m */; };
+		939352AF1D5669470017086E /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352911D5669470017086E /* GCDWebServer.m */; };
+		939352B01D5669470017086E /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352931D5669470017086E /* GCDWebServerConnection.m */; };
+		939352B11D5669470017086E /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352931D5669470017086E /* GCDWebServerConnection.m */; };
+		939352B21D5669470017086E /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352951D5669470017086E /* GCDWebServerFunctions.m */; };
+		939352B31D5669470017086E /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352951D5669470017086E /* GCDWebServerFunctions.m */; };
+		939352B41D5669470017086E /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352991D5669470017086E /* GCDWebServerRequest.m */; };
+		939352B51D5669470017086E /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352991D5669470017086E /* GCDWebServerRequest.m */; };
+		939352B61D5669470017086E /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529B1D5669470017086E /* GCDWebServerResponse.m */; };
+		939352B71D5669470017086E /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529B1D5669470017086E /* GCDWebServerResponse.m */; };
+		939352B81D5669470017086E /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529E1D5669470017086E /* GCDWebServerDataRequest.m */; };
+		939352B91D5669470017086E /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529E1D5669470017086E /* GCDWebServerDataRequest.m */; };
+		939352BA1D5669470017086E /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A01D5669470017086E /* GCDWebServerFileRequest.m */; };
+		939352BB1D5669470017086E /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A01D5669470017086E /* GCDWebServerFileRequest.m */; };
+		939352BC1D5669470017086E /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A21D5669470017086E /* GCDWebServerMultiPartFormRequest.m */; };
+		939352BD1D5669470017086E /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A21D5669470017086E /* GCDWebServerMultiPartFormRequest.m */; };
+		939352BE1D5669470017086E /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A41D5669470017086E /* GCDWebServerURLEncodedFormRequest.m */; };
+		939352BF1D5669470017086E /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A41D5669470017086E /* GCDWebServerURLEncodedFormRequest.m */; };
+		939352C01D5669470017086E /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A71D5669470017086E /* GCDWebServerDataResponse.m */; };
+		939352C11D5669470017086E /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A71D5669470017086E /* GCDWebServerDataResponse.m */; };
+		939352C21D5669470017086E /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A91D5669470017086E /* GCDWebServerErrorResponse.m */; };
+		939352C31D5669470017086E /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A91D5669470017086E /* GCDWebServerErrorResponse.m */; };
+		939352C41D5669470017086E /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AB1D5669470017086E /* GCDWebServerFileResponse.m */; };
+		939352C51D5669470017086E /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AB1D5669470017086E /* GCDWebServerFileResponse.m */; };
+		939352C61D5669470017086E /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AD1D5669470017086E /* GCDWebServerStreamedResponse.m */; };
+		939352C71D5669470017086E /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AD1D5669470017086E /* GCDWebServerStreamedResponse.m */; };
+		93E6B5C41D56CB70001A1966 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA61D55642C0017086E /* CouchbaseLite.framework */; };
+		93E6B5C51D56CB70001A1966 /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA71D55642C0017086E /* CouchbaseLiteListener.framework */; };
+		93E6B5C61D56CB70001A1966 /* libCBLForestDBStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA81D55642C0017086E /* libCBLForestDBStorage.a */; };
+		93E6B5C71D56CB70001A1966 /* libCBLJSViewCompiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA91D55642C0017086E /* libCBLJSViewCompiler.a */; };
+		93E6B6461D56CE3C001A1966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352E2C01D553B3B00BF37E8 /* ViewController.swift */; };
+		93E6B6471D56CE3C001A1966 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A01D5669470017086E /* GCDWebServerFileRequest.m */; };
+		93E6B6481D56CE3C001A1966 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AD1D5669470017086E /* GCDWebServerStreamedResponse.m */; };
+		93E6B6491D56CE3C001A1966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9352E2BE1D553B3B00BF37E8 /* AppDelegate.swift */; };
+		93E6B64A1D56CE3C001A1966 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A71D5669470017086E /* GCDWebServerDataResponse.m */; };
+		93E6B64B1D56CE3C001A1966 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A41D5669470017086E /* GCDWebServerURLEncodedFormRequest.m */; };
+		93E6B64C1D56CE3C001A1966 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529E1D5669470017086E /* GCDWebServerDataRequest.m */; };
+		93E6B64D1D56CE3C001A1966 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A91D5669470017086E /* GCDWebServerErrorResponse.m */; };
+		93E6B64E1D56CE3C001A1966 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352AB1D5669470017086E /* GCDWebServerFileResponse.m */; };
+		93E6B64F1D56CE3C001A1966 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352931D5669470017086E /* GCDWebServerConnection.m */; };
+		93E6B6501D56CE3C001A1966 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCE1D5566CD0017086E /* Config.swift */; };
+		93E6B6511D56CE3C001A1966 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352991D5669470017086E /* GCDWebServerRequest.m */; };
+		93E6B6521D56CE3C001A1966 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352A21D5669470017086E /* GCDWebServerMultiPartFormRequest.m */; };
+		93E6B6531D56CE3C001A1966 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9393529B1D5669470017086E /* GCDWebServerResponse.m */; };
+		93E6B6541D56CE3C001A1966 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352911D5669470017086E /* GCDWebServer.m */; };
+		93E6B6551D56CE3C001A1966 /* LiteServ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93934DCF1D5566CD0017086E /* LiteServ.swift */; };
+		93E6B6561D56CE3C001A1966 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 939352951D5669470017086E /* GCDWebServerFunctions.m */; };
+		93E6B6581D56CE3C001A1966 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934D7B1D5554F50017086E /* JavaScriptCore.framework */; };
+		93E6B6591D56CE3C001A1966 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2EA1D553DF000BF37E8 /* CFNetwork.framework */; };
+		93E6B65A1D56CE3C001A1966 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E81D553DE300BF37E8 /* SystemConfiguration.framework */; };
+		93E6B65B1D56CE3C001A1966 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E61D553DDC00BF37E8 /* Security.framework */; };
+		93E6B65C1D56CE3C001A1966 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA61D55642C0017086E /* CouchbaseLite.framework */; };
+		93E6B65D1D56CE3C001A1966 /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA71D55642C0017086E /* CouchbaseLiteListener.framework */; };
+		93E6B65E1D56CE3C001A1966 /* libCBLForestDBStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA81D55642C0017086E /* libCBLForestDBStorage.a */; };
+		93E6B65F1D56CE3C001A1966 /* libCBLJSViewCompiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93934DA91D55642C0017086E /* libCBLJSViewCompiler.a */; };
+		93E6B6601D56CE3C001A1966 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E41D553DD600BF37E8 /* libz.tbd */; };
+		93E6B6611D56CE3C001A1966 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9352E2E21D553DD000BF37E8 /* libc++.tbd */; };
+		93E6B6641D56CE3C001A1966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9352E2C71D553B3B00BF37E8 /* LaunchScreen.storyboard */; };
+		93E6B6651D56CE3C001A1966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9352E2C51D553B3B00BF37E8 /* Assets.xcassets */; };
+		93E6B6661D56CE3C001A1966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9352E2C21D553B3B00BF37E8 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		93366D081D56DC030047CBD3 /* LiteServ-tvOS-SQLCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiteServ-tvOS-SQLCipher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93366D0A1D56DC530047CBD3 /* Info-SQLCipher.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-SQLCipher.plist"; sourceTree = "<group>"; };
+		9352E2BB1D553B3B00BF37E8 /* LiteServ-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiteServ-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9352E2BE1D553B3B00BF37E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9352E2C01D553B3B00BF37E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9352E2C31D553B3B00BF37E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9352E2C51D553B3B00BF37E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9352E2C81D553B3B00BF37E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9352E2CA1D553B3B00BF37E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9352E2DC1D553D1600BF37E8 /* LiteServ-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiteServ-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		9352E2E01D553DCA00BF37E8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9352E2E21D553DD000BF37E8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9352E2E41D553DD600BF37E8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9352E2E61D553DDC00BF37E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9352E2E81D553DE300BF37E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9352E2EA1D553DF000BF37E8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		93934D7B1D5554F50017086E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		93934D841D55628F0017086E /* LiteServ-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiteServ-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93934D861D55628F0017086E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93934D881D55628F0017086E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93934D8B1D55628F0017086E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93934D8D1D55628F0017086E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93934D8F1D55628F0017086E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93934D9A1D5563710017086E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		93934D9D1D55638D0017086E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		93934D9F1D5563970017086E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		93934DA11D5563A60017086E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		93934DA51D55642C0017086E /* CBLRegisterJSViewCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLRegisterJSViewCompiler.h; sourceTree = "<group>"; };
+		93934DA61D55642C0017086E /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		93934DA71D55642C0017086E /* CouchbaseLiteListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteListener.framework; sourceTree = "<group>"; };
+		93934DA81D55642C0017086E /* libCBLForestDBStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCBLForestDBStorage.a; sourceTree = "<group>"; };
+		93934DA91D55642C0017086E /* libCBLJSViewCompiler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCBLJSViewCompiler.a; sourceTree = "<group>"; };
+		93934DAA1D55642C0017086E /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
+		93934DB11D5564F60017086E /* CBLRegisterJSViewCompiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLRegisterJSViewCompiler.h; sourceTree = "<group>"; };
+		93934DB21D5564F60017086E /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		93934DB31D5564F60017086E /* CouchbaseLiteListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteListener.framework; sourceTree = "<group>"; };
+		93934DB41D5564F60017086E /* libCBLForestDBStorage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCBLForestDBStorage.a; sourceTree = "<group>"; };
+		93934DB51D5564F60017086E /* libCBLJSViewCompiler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCBLJSViewCompiler.a; sourceTree = "<group>"; };
+		93934DB61D5564F60017086E /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
+		93934DC11D5565450017086E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		93934DC31D5565520017086E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		93934DC51D55661A0017086E /* LiteServ-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiteServ-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		93934DC61D55661B0017086E /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		93934DC71D55661B0017086E /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		93934DCA1D5566490017086E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		93934DCE1D5566CD0017086E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		93934DCF1D5566CD0017086E /* LiteServ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteServ.swift; sourceTree = "<group>"; };
+		939352901D5669470017086E /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		939352911D5669470017086E /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		939352921D5669470017086E /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		939352931D5669470017086E /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		939352941D5669470017086E /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		939352951D5669470017086E /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		939352961D5669470017086E /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		939352971D5669470017086E /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		939352981D5669470017086E /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		939352991D5669470017086E /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		9393529A1D5669470017086E /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		9393529B1D5669470017086E /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		9393529D1D5669470017086E /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		9393529E1D5669470017086E /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		9393529F1D5669470017086E /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		939352A01D5669470017086E /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		939352A11D5669470017086E /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		939352A21D5669470017086E /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		939352A31D5669470017086E /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		939352A41D5669470017086E /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		939352A61D5669470017086E /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		939352A71D5669470017086E /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		939352A81D5669470017086E /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		939352A91D5669470017086E /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		939352AA1D5669470017086E /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		939352AB1D5669470017086E /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		939352AC1D5669470017086E /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		939352AD1D5669470017086E /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		93E6B66A1D56CE3C001A1966 /* LiteServ-iOS-SQLCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiteServ-iOS-SQLCipher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E6B66C1D56CF1E001A1966 /* Info-SQLCipher.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-SQLCipher.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93366CF61D56DC030047CBD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93366CF71D56DC030047CBD3 /* JavaScriptCore.framework in Frameworks */,
+				93366CF81D56DC030047CBD3 /* libc++.tbd in Frameworks */,
+				93366CF91D56DC030047CBD3 /* CFNetwork.framework in Frameworks */,
+				93366CFA1D56DC030047CBD3 /* Security.framework in Frameworks */,
+				93366CFB1D56DC030047CBD3 /* SystemConfiguration.framework in Frameworks */,
+				93366CFC1D56DC030047CBD3 /* CouchbaseLiteListener.framework in Frameworks */,
+				93366CFD1D56DC030047CBD3 /* CouchbaseLite.framework in Frameworks */,
+				93366CFE1D56DC030047CBD3 /* libCBLForestDBStorage.a in Frameworks */,
+				93366CFF1D56DC030047CBD3 /* libCBLJSViewCompiler.a in Frameworks */,
+				93366D0C1D56DC730047CBD3 /* libsqlcipher.a in Frameworks */,
+				93366D011D56DC030047CBD3 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9352E2B81D553B3B00BF37E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93934D7C1D5554F50017086E /* JavaScriptCore.framework in Frameworks */,
+				9352E2EB1D553DF000BF37E8 /* CFNetwork.framework in Frameworks */,
+				9352E2E91D553DE300BF37E8 /* SystemConfiguration.framework in Frameworks */,
+				9352E2E71D553DDC00BF37E8 /* Security.framework in Frameworks */,
+				93E6B5C41D56CB70001A1966 /* CouchbaseLite.framework in Frameworks */,
+				93E6B5C51D56CB70001A1966 /* CouchbaseLiteListener.framework in Frameworks */,
+				93E6B5C61D56CB70001A1966 /* libCBLForestDBStorage.a in Frameworks */,
+				93E6B5C71D56CB70001A1966 /* libCBLJSViewCompiler.a in Frameworks */,
+				9352E2E51D553DD600BF37E8 /* libz.tbd in Frameworks */,
+				9352E2E31D553DD000BF37E8 /* libc++.tbd in Frameworks */,
+				9352E2E11D553DCA00BF37E8 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93934D811D55628F0017086E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93934DCB1D5566490017086E /* JavaScriptCore.framework in Frameworks */,
+				93934DC41D5565520017086E /* libc++.tbd in Frameworks */,
+				93934D9B1D5563710017086E /* CFNetwork.framework in Frameworks */,
+				93934DA01D5563970017086E /* Security.framework in Frameworks */,
+				93934D9E1D55638D0017086E /* SystemConfiguration.framework in Frameworks */,
+				93934DBA1D5564F60017086E /* CouchbaseLiteListener.framework in Frameworks */,
+				93934DB81D5564F60017086E /* CouchbaseLite.framework in Frameworks */,
+				93934DBC1D5564F60017086E /* libCBLForestDBStorage.a in Frameworks */,
+				93934DBE1D5564F60017086E /* libCBLJSViewCompiler.a in Frameworks */,
+				93934DA21D5563A60017086E /* libsqlite3.tbd in Frameworks */,
+				93934DC21D5565450017086E /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E6B6571D56CE3C001A1966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E6B6581D56CE3C001A1966 /* JavaScriptCore.framework in Frameworks */,
+				93E6B6591D56CE3C001A1966 /* CFNetwork.framework in Frameworks */,
+				93E6B65A1D56CE3C001A1966 /* SystemConfiguration.framework in Frameworks */,
+				93E6B65B1D56CE3C001A1966 /* Security.framework in Frameworks */,
+				93E6B65C1D56CE3C001A1966 /* CouchbaseLite.framework in Frameworks */,
+				93E6B65D1D56CE3C001A1966 /* CouchbaseLiteListener.framework in Frameworks */,
+				93E6B65E1D56CE3C001A1966 /* libCBLForestDBStorage.a in Frameworks */,
+				93E6B65F1D56CE3C001A1966 /* libCBLJSViewCompiler.a in Frameworks */,
+				93366CE11D56D1B90047CBD3 /* libsqlcipher.a in Frameworks */,
+				93E6B6601D56CE3C001A1966 /* libz.tbd in Frameworks */,
+				93E6B6611D56CE3C001A1966 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9352E2B21D553B3B00BF37E8 = {
+			isa = PBXGroup;
+			children = (
+				93934DCD1D5566CD0017086E /* LiteServ */,
+				9352E2BD1D553B3B00BF37E8 /* LiteServ-iOS */,
+				93934D851D55628F0017086E /* LiteServ-tvOS */,
+				9352E2BC1D553B3B00BF37E8 /* Products */,
+				9393528D1D5669310017086E /* vendor */,
+				9352E2D01D553D0200BF37E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9352E2BC1D553B3B00BF37E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9352E2BB1D553B3B00BF37E8 /* LiteServ-iOS.app */,
+				93934D841D55628F0017086E /* LiteServ-tvOS.app */,
+				93E6B66A1D56CE3C001A1966 /* LiteServ-iOS-SQLCipher.app */,
+				93366D081D56DC030047CBD3 /* LiteServ-tvOS-SQLCipher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9352E2BD1D553B3B00BF37E8 /* LiteServ-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9352E2BE1D553B3B00BF37E8 /* AppDelegate.swift */,
+				9352E2C01D553B3B00BF37E8 /* ViewController.swift */,
+				9352E2DC1D553D1600BF37E8 /* LiteServ-iOS-Bridging-Header.h */,
+				9352E2C21D553B3B00BF37E8 /* Main.storyboard */,
+				9352E2C51D553B3B00BF37E8 /* Assets.xcassets */,
+				9352E2C71D553B3B00BF37E8 /* LaunchScreen.storyboard */,
+				9352E2CA1D553B3B00BF37E8 /* Info.plist */,
+				93E6B66C1D56CF1E001A1966 /* Info-SQLCipher.plist */,
+			);
+			path = "LiteServ-iOS";
+			sourceTree = "<group>";
+		};
+		9352E2D01D553D0200BF37E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93934DA41D55642C0017086E /* iOS */,
+				93934DB01D5564F60017086E /* tvOS */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		93934D851D55628F0017086E /* LiteServ-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				93934D861D55628F0017086E /* AppDelegate.swift */,
+				93934D881D55628F0017086E /* ViewController.swift */,
+				93934DC51D55661A0017086E /* LiteServ-tvOS-Bridging-Header.h */,
+				93934D8A1D55628F0017086E /* Main.storyboard */,
+				93934D8D1D55628F0017086E /* Assets.xcassets */,
+				93934D8F1D55628F0017086E /* Info.plist */,
+				93366D0A1D56DC530047CBD3 /* Info-SQLCipher.plist */,
+				93934DC61D55661B0017086E /* Test.h */,
+				93934DC71D55661B0017086E /* Test.m */,
+			);
+			path = "LiteServ-tvOS";
+			sourceTree = "<group>";
+		};
+		93934DA41D55642C0017086E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9352E2E41D553DD600BF37E8 /* libz.tbd */,
+				9352E2E21D553DD000BF37E8 /* libc++.tbd */,
+				9352E2E01D553DCA00BF37E8 /* libsqlite3.tbd */,
+				9352E2EA1D553DF000BF37E8 /* CFNetwork.framework */,
+				93934D7B1D5554F50017086E /* JavaScriptCore.framework */,
+				9352E2E61D553DDC00BF37E8 /* Security.framework */,
+				9352E2E81D553DE300BF37E8 /* SystemConfiguration.framework */,
+				93934DA61D55642C0017086E /* CouchbaseLite.framework */,
+				93934DA71D55642C0017086E /* CouchbaseLiteListener.framework */,
+				93934DA81D55642C0017086E /* libCBLForestDBStorage.a */,
+				93934DA91D55642C0017086E /* libCBLJSViewCompiler.a */,
+				93934DAA1D55642C0017086E /* libsqlcipher.a */,
+				93934DA51D55642C0017086E /* CBLRegisterJSViewCompiler.h */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		93934DB01D5564F60017086E /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				93934DC11D5565450017086E /* libz.tbd */,
+				93934DC31D5565520017086E /* libc++.tbd */,
+				93934DA11D5563A60017086E /* libsqlite3.tbd */,
+				93934D9A1D5563710017086E /* CFNetwork.framework */,
+				93934DCA1D5566490017086E /* JavaScriptCore.framework */,
+				93934D9F1D5563970017086E /* Security.framework */,
+				93934D9D1D55638D0017086E /* SystemConfiguration.framework */,
+				93934DB21D5564F60017086E /* CouchbaseLite.framework */,
+				93934DB31D5564F60017086E /* CouchbaseLiteListener.framework */,
+				93934DB41D5564F60017086E /* libCBLForestDBStorage.a */,
+				93934DB51D5564F60017086E /* libCBLJSViewCompiler.a */,
+				93934DB61D5564F60017086E /* libsqlcipher.a */,
+				93934DB11D5564F60017086E /* CBLRegisterJSViewCompiler.h */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		93934DCD1D5566CD0017086E /* LiteServ */ = {
+			isa = PBXGroup;
+			children = (
+				93934DCE1D5566CD0017086E /* Config.swift */,
+				93934DCF1D5566CD0017086E /* LiteServ.swift */,
+			);
+			path = LiteServ;
+			sourceTree = "<group>";
+		};
+		9393528D1D5669310017086E /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9393528E1D5669470017086E /* GCDWebServer */,
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		9393528E1D5669470017086E /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				9393528F1D5669470017086E /* Core */,
+				9393529C1D5669470017086E /* Requests */,
+				939352A51D5669470017086E /* Responses */,
+			);
+			name = GCDWebServer;
+			path = vendor/GCDWebServer/GCDWebServer;
+			sourceTree = "<group>";
+		};
+		9393528F1D5669470017086E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				939352901D5669470017086E /* GCDWebServer.h */,
+				939352911D5669470017086E /* GCDWebServer.m */,
+				939352921D5669470017086E /* GCDWebServerConnection.h */,
+				939352931D5669470017086E /* GCDWebServerConnection.m */,
+				939352941D5669470017086E /* GCDWebServerFunctions.h */,
+				939352951D5669470017086E /* GCDWebServerFunctions.m */,
+				939352961D5669470017086E /* GCDWebServerHTTPStatusCodes.h */,
+				939352971D5669470017086E /* GCDWebServerPrivate.h */,
+				939352981D5669470017086E /* GCDWebServerRequest.h */,
+				939352991D5669470017086E /* GCDWebServerRequest.m */,
+				9393529A1D5669470017086E /* GCDWebServerResponse.h */,
+				9393529B1D5669470017086E /* GCDWebServerResponse.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9393529C1D5669470017086E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9393529D1D5669470017086E /* GCDWebServerDataRequest.h */,
+				9393529E1D5669470017086E /* GCDWebServerDataRequest.m */,
+				9393529F1D5669470017086E /* GCDWebServerFileRequest.h */,
+				939352A01D5669470017086E /* GCDWebServerFileRequest.m */,
+				939352A11D5669470017086E /* GCDWebServerMultiPartFormRequest.h */,
+				939352A21D5669470017086E /* GCDWebServerMultiPartFormRequest.m */,
+				939352A31D5669470017086E /* GCDWebServerURLEncodedFormRequest.h */,
+				939352A41D5669470017086E /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		939352A51D5669470017086E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				939352A61D5669470017086E /* GCDWebServerDataResponse.h */,
+				939352A71D5669470017086E /* GCDWebServerDataResponse.m */,
+				939352A81D5669470017086E /* GCDWebServerErrorResponse.h */,
+				939352A91D5669470017086E /* GCDWebServerErrorResponse.m */,
+				939352AA1D5669470017086E /* GCDWebServerFileResponse.h */,
+				939352AB1D5669470017086E /* GCDWebServerFileResponse.m */,
+				939352AC1D5669470017086E /* GCDWebServerStreamedResponse.h */,
+				939352AD1D5669470017086E /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93366CE21D56DC030047CBD3 /* LiteServ-tvOS-SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93366D051D56DC030047CBD3 /* Build configuration list for PBXNativeTarget "LiteServ-tvOS-SQLCipher" */;
+			buildPhases = (
+				93366CE31D56DC030047CBD3 /* Sources */,
+				93366CF61D56DC030047CBD3 /* Frameworks */,
+				93366D021D56DC030047CBD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiteServ-tvOS-SQLCipher";
+			productName = "LiteServ-tvOS";
+			productReference = 93366D081D56DC030047CBD3 /* LiteServ-tvOS-SQLCipher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9352E2BA1D553B3B00BF37E8 /* LiteServ-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9352E2CD1D553B3B00BF37E8 /* Build configuration list for PBXNativeTarget "LiteServ-iOS" */;
+			buildPhases = (
+				9352E2B71D553B3B00BF37E8 /* Sources */,
+				9352E2B81D553B3B00BF37E8 /* Frameworks */,
+				9352E2B91D553B3B00BF37E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiteServ-iOS";
+			productName = "LiteServ-iOS";
+			productReference = 9352E2BB1D553B3B00BF37E8 /* LiteServ-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93934D831D55628F0017086E /* LiteServ-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93934D901D55628F0017086E /* Build configuration list for PBXNativeTarget "LiteServ-tvOS" */;
+			buildPhases = (
+				93934D801D55628F0017086E /* Sources */,
+				93934D811D55628F0017086E /* Frameworks */,
+				93934D821D55628F0017086E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiteServ-tvOS";
+			productName = "LiteServ-tvOS";
+			productReference = 93934D841D55628F0017086E /* LiteServ-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93E6B6441D56CE3C001A1966 /* LiteServ-iOS-SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93E6B6671D56CE3C001A1966 /* Build configuration list for PBXNativeTarget "LiteServ-iOS-SQLCipher" */;
+			buildPhases = (
+				93E6B6451D56CE3C001A1966 /* Sources */,
+				93E6B6571D56CE3C001A1966 /* Frameworks */,
+				93E6B6631D56CE3C001A1966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiteServ-iOS-SQLCipher";
+			productName = "LiteServ-iOS";
+			productReference = 93E6B66A1D56CE3C001A1966 /* LiteServ-iOS-SQLCipher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9352E2B31D553B3B00BF37E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Couchbase;
+				TargetAttributes = {
+					93366CE21D56DC030047CBD3 = {
+						DevelopmentTeam = N2Q372V7W2;
+					};
+					9352E2BA1D553B3B00BF37E8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = N2Q372V7W2;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					93934D831D55628F0017086E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = N2Q372V7W2;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					93E6B6441D56CE3C001A1966 = {
+						DevelopmentTeam = N2Q372V7W2;
+					};
+				};
+			};
+			buildConfigurationList = 9352E2B61D553B3B00BF37E8 /* Build configuration list for PBXProject "LiteServ-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9352E2B21D553B3B00BF37E8;
+			productRefGroup = 9352E2BC1D553B3B00BF37E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9352E2BA1D553B3B00BF37E8 /* LiteServ-iOS */,
+				93E6B6441D56CE3C001A1966 /* LiteServ-iOS-SQLCipher */,
+				93934D831D55628F0017086E /* LiteServ-tvOS */,
+				93366CE21D56DC030047CBD3 /* LiteServ-tvOS-SQLCipher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93366D021D56DC030047CBD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93366D031D56DC030047CBD3 /* Assets.xcassets in Resources */,
+				93366D041D56DC030047CBD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9352E2B91D553B3B00BF37E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9352E2C91D553B3B00BF37E8 /* LaunchScreen.storyboard in Resources */,
+				9352E2C61D553B3B00BF37E8 /* Assets.xcassets in Resources */,
+				9352E2C41D553B3B00BF37E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93934D821D55628F0017086E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93934D8E1D55628F0017086E /* Assets.xcassets in Resources */,
+				93934D8C1D55628F0017086E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E6B6631D56CE3C001A1966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E6B6641D56CE3C001A1966 /* LaunchScreen.storyboard in Resources */,
+				93E6B6651D56CE3C001A1966 /* Assets.xcassets in Resources */,
+				93E6B6661D56CE3C001A1966 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93366CE31D56DC030047CBD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93366CE41D56DC030047CBD3 /* LiteServ.swift in Sources */,
+				93366CE51D56DC030047CBD3 /* GCDWebServerRequest.m in Sources */,
+				93366CE61D56DC030047CBD3 /* GCDWebServerErrorResponse.m in Sources */,
+				93366CE71D56DC030047CBD3 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				93366CE81D56DC030047CBD3 /* GCDWebServerConnection.m in Sources */,
+				93366CE91D56DC030047CBD3 /* ViewController.swift in Sources */,
+				93366CEA1D56DC030047CBD3 /* GCDWebServerStreamedResponse.m in Sources */,
+				93366CEB1D56DC030047CBD3 /* GCDWebServer.m in Sources */,
+				93366CEC1D56DC030047CBD3 /* GCDWebServerDataRequest.m in Sources */,
+				93366CED1D56DC030047CBD3 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				93366CEE1D56DC030047CBD3 /* Config.swift in Sources */,
+				93366CEF1D56DC030047CBD3 /* Test.m in Sources */,
+				93366CF01D56DC030047CBD3 /* GCDWebServerFileRequest.m in Sources */,
+				93366CF11D56DC030047CBD3 /* GCDWebServerResponse.m in Sources */,
+				93366CF21D56DC030047CBD3 /* GCDWebServerFileResponse.m in Sources */,
+				93366CF31D56DC030047CBD3 /* GCDWebServerDataResponse.m in Sources */,
+				93366CF41D56DC030047CBD3 /* GCDWebServerFunctions.m in Sources */,
+				93366CF51D56DC030047CBD3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9352E2B71D553B3B00BF37E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9352E2C11D553B3B00BF37E8 /* ViewController.swift in Sources */,
+				939352BA1D5669470017086E /* GCDWebServerFileRequest.m in Sources */,
+				939352C61D5669470017086E /* GCDWebServerStreamedResponse.m in Sources */,
+				9352E2BF1D553B3B00BF37E8 /* AppDelegate.swift in Sources */,
+				939352C01D5669470017086E /* GCDWebServerDataResponse.m in Sources */,
+				939352BE1D5669470017086E /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				939352B81D5669470017086E /* GCDWebServerDataRequest.m in Sources */,
+				939352C21D5669470017086E /* GCDWebServerErrorResponse.m in Sources */,
+				939352C41D5669470017086E /* GCDWebServerFileResponse.m in Sources */,
+				939352B01D5669470017086E /* GCDWebServerConnection.m in Sources */,
+				93934DD01D5566CD0017086E /* Config.swift in Sources */,
+				939352B41D5669470017086E /* GCDWebServerRequest.m in Sources */,
+				939352BC1D5669470017086E /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				939352B61D5669470017086E /* GCDWebServerResponse.m in Sources */,
+				939352AE1D5669470017086E /* GCDWebServer.m in Sources */,
+				93934DD21D5566CD0017086E /* LiteServ.swift in Sources */,
+				939352B21D5669470017086E /* GCDWebServerFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93934D801D55628F0017086E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93934DD31D5566CD0017086E /* LiteServ.swift in Sources */,
+				939352B51D5669470017086E /* GCDWebServerRequest.m in Sources */,
+				939352C31D5669470017086E /* GCDWebServerErrorResponse.m in Sources */,
+				939352BD1D5669470017086E /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				939352B11D5669470017086E /* GCDWebServerConnection.m in Sources */,
+				93934D891D55628F0017086E /* ViewController.swift in Sources */,
+				939352C71D5669470017086E /* GCDWebServerStreamedResponse.m in Sources */,
+				939352AF1D5669470017086E /* GCDWebServer.m in Sources */,
+				939352B91D5669470017086E /* GCDWebServerDataRequest.m in Sources */,
+				939352BF1D5669470017086E /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				93934DD11D5566CD0017086E /* Config.swift in Sources */,
+				93934DC81D55661B0017086E /* Test.m in Sources */,
+				939352BB1D5669470017086E /* GCDWebServerFileRequest.m in Sources */,
+				939352B71D5669470017086E /* GCDWebServerResponse.m in Sources */,
+				939352C51D5669470017086E /* GCDWebServerFileResponse.m in Sources */,
+				939352C11D5669470017086E /* GCDWebServerDataResponse.m in Sources */,
+				939352B31D5669470017086E /* GCDWebServerFunctions.m in Sources */,
+				93934D871D55628F0017086E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E6B6451D56CE3C001A1966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E6B6461D56CE3C001A1966 /* ViewController.swift in Sources */,
+				93E6B6471D56CE3C001A1966 /* GCDWebServerFileRequest.m in Sources */,
+				93E6B6481D56CE3C001A1966 /* GCDWebServerStreamedResponse.m in Sources */,
+				93E6B6491D56CE3C001A1966 /* AppDelegate.swift in Sources */,
+				93E6B64A1D56CE3C001A1966 /* GCDWebServerDataResponse.m in Sources */,
+				93E6B64B1D56CE3C001A1966 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				93E6B64C1D56CE3C001A1966 /* GCDWebServerDataRequest.m in Sources */,
+				93E6B64D1D56CE3C001A1966 /* GCDWebServerErrorResponse.m in Sources */,
+				93E6B64E1D56CE3C001A1966 /* GCDWebServerFileResponse.m in Sources */,
+				93E6B64F1D56CE3C001A1966 /* GCDWebServerConnection.m in Sources */,
+				93E6B6501D56CE3C001A1966 /* Config.swift in Sources */,
+				93E6B6511D56CE3C001A1966 /* GCDWebServerRequest.m in Sources */,
+				93E6B6521D56CE3C001A1966 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				93E6B6531D56CE3C001A1966 /* GCDWebServerResponse.m in Sources */,
+				93E6B6541D56CE3C001A1966 /* GCDWebServer.m in Sources */,
+				93E6B6551D56CE3C001A1966 /* LiteServ.swift in Sources */,
+				93E6B6561D56CE3C001A1966 /* GCDWebServerFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9352E2C21D553B3B00BF37E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9352E2C31D553B3B00BF37E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9352E2C71D553B3B00BF37E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9352E2C81D553B3B00BF37E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93934D8A1D55628F0017086E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93934D8B1D55628F0017086E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93366D061D56DC030047CBD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-tvOS/Info-SQLCipher.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-tvOS/LiteServ-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		93366D071D56DC030047CBD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-tvOS/Info-SQLCipher.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-tvOS/LiteServ-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		9352E2CB1D553B3B00BF37E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9352E2CC1D553B3B00BF37E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9352E2CE1D553B3B00BF37E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-iOS/LiteServ-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9352E2CF1D553B3B00BF37E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-iOS/LiteServ-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		93934D911D55628F0017086E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-tvOS/LiteServ-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		93934D921D55628F0017086E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-tvOS/LiteServ-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		93E6B6681D56CE3C001A1966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-iOS/Info-SQLCipher.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-iOS/LiteServ-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		93E6B6691D56CE3C001A1966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N2Q372V7W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				INFOPLIST_FILE = "LiteServ-iOS/Info-SQLCipher.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/iOS",
+					"$(PROJECT_DIR)/Frameworks/tvOS",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.couchbase.LiteServ-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiteServ-iOS/LiteServ-iOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93366D051D56DC030047CBD3 /* Build configuration list for PBXNativeTarget "LiteServ-tvOS-SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93366D061D56DC030047CBD3 /* Debug */,
+				93366D071D56DC030047CBD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9352E2B61D553B3B00BF37E8 /* Build configuration list for PBXProject "LiteServ-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9352E2CB1D553B3B00BF37E8 /* Debug */,
+				9352E2CC1D553B3B00BF37E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9352E2CD1D553B3B00BF37E8 /* Build configuration list for PBXNativeTarget "LiteServ-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9352E2CE1D553B3B00BF37E8 /* Debug */,
+				9352E2CF1D553B3B00BF37E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93934D901D55628F0017086E /* Build configuration list for PBXNativeTarget "LiteServ-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93934D911D55628F0017086E /* Debug */,
+				93934D921D55628F0017086E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93E6B6671D56CE3C001A1966 /* Build configuration list for PBXNativeTarget "LiteServ-iOS-SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E6B6681D56CE3C001A1966 /* Debug */,
+				93E6B6691D56CE3C001A1966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9352E2B31D553B3B00BF37E8 /* Project object */;
+}
