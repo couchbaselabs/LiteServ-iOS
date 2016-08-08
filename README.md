@@ -2,19 +2,29 @@
 
 LiteServ-iOS is a LiteServ app that runs on iOS or tvOS devices.
 
-#How to build and run?
+##How to build and run?
 
-##Requirement
+###Requirement
 - XCode 8
 
-##Option 1: Run with XCode
+###Get the code
+ ```
+ $git clone https://github.com/couchbaselabs/liteserv-ios.git
+ $git submodule update --init
+ ```
+ 
+###Install frameworks
+Copy couchbase-lite-ios framework files into [Frameworks/iOS](https://github.com/couchbaselabs/liteserv-ios/tree/master/Frameworks/iOS) and [Frameworks/tvOS](https://github.com/couchbaselabs/liteserv-ios/tree/master/Frameworks/tvOS) directory. See the README file in those folders for more detail about what files to copy.
+
+###Build and run with XCode
 1. Open LiteServ-iOS project with XCode.
 2. Select `LiteServ-iOS` scheme to run on iOS devices.
 3. Or select `LiteServ-tvOS` scheme to run on tvOS devices.
 4. If you want the App to build with SQLCipher instead of SQLite, select the scheme that ends with `-SQLCipher`.
 
-##Option 2: Run with command lines (Simulator only)
+###Build and run with command lines (Simulator only)
 1. Build the app:
+
  iOS:
  ```
  $xcodebuild -scheme LiteServ-iOS -sdk iphonesimulator -configuration Release -derivedDataPath build
@@ -51,12 +61,12 @@ LiteServ-iOS is a LiteServ app that runs on iOS or tvOS devices.
  $xcrun simctl install booted <PATH to LiteServ-iOS.app>
  $xcrun simctl launch booted com.couchbase.LiteServ-iOS
  ```
- Note: tvOS app file name will be `LiteServe-tvOS.app`. If buidling the app with SQLCipher, the app file name will be `LiteServ-iOS-SQLCipher.app` for iOS or `LiteServ-tvOS-SQLCipher.app` for tvOS.
+ Note: tvOS app file name will be `LiteServe-tvOS.app`. If buidling the app with SQLCipher, the app file name will be `LiteServ-iOS-SQLCipher.app` for iOS and `LiteServ-tvOS-SQLCipher.app` for tvOS.
 
  Reference: https://coderwall.com/p/fprm_g/chose-ios-simulator-via-command-line--2 (Note: Some of the commands may be old.)
 
-#How to configure default settings?
-Before you run the app, you can setup environment variables to set the default App settings. The app settings consist of:
+##How to change default settings?
+Before running the app, you can setup environment variables to set the app settings. The app settings consist of:
 
 Name       | Default value| Description|
 -----------|--------------|------------|
@@ -74,18 +84,21 @@ export SIMCTL_CHILD_port="8888"
 export SIMCTL_CHILD_dbpasswords="db1=seekrit1,db2=seekrit2"
 ```
 
-#How to use Admin port?
+##How to use Admin port?
 1. `PUT /start` : Start or restart the listener with JSON configuration.
+
  ```
 $curl -X PUT -H "Content-Type: application/json" -d '{
     "port": 8888
     "dbpasswords": "db1=seekrit1,db2=seekrit2"
 }' "http://localhost:59850/start"
  ```
+ 
 2. `PUT /stop` : Stop the listener.
  ```
  $curl -X PUT "http://localhost:59850/stop"
  ```
+ 
 3. `GET /` See current running:
  ```
  $curl -X GET "http://localhost:59850/"
