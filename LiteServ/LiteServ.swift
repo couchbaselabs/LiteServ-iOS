@@ -59,7 +59,7 @@ class LiteServ {
                         jsonObject: ["status": "Error", "message": error.description])
                 }
                 
-                var result: Dictionary<String, AnyObject> = ["status": "OK"]
+                var result: Dictionary<String, Any> = ["status": "OK"]
                 if let curConfig = self.currentConfig {
                     var c = curConfig.asJson()
                     c["port"] = UInt(self.listener!.port)
@@ -79,7 +79,7 @@ class LiteServ {
         server!.addHandler(
             forMethod: "GET", path: "/", request: GCDWebServerDataRequest.self,
             processBlock: { request in
-                var result: Dictionary<String, AnyObject> = [:]
+                var result: Dictionary<String, Any> = [:]
                 result["adminPort"] = self.server!.port
                 if let curConfig = self.currentConfig, let listener = self.listener {
                     var c = curConfig.asJson()

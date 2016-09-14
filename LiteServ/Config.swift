@@ -70,8 +70,8 @@ class Config: NSCopying {
         }
     }
     
-    func asJson() -> Dictionary<String, AnyObject> {
-        var json: Dictionary<String, AnyObject> = [
+    func asJson() -> Dictionary<String, Any> {
+        var json: Dictionary<String, Any> = [
             "adminPort": adminPort,
             "port": port,
             "readonly": readonly,
@@ -89,7 +89,7 @@ class Config: NSCopying {
         return json
     }
     
-    func copy(with zone: NSZone? = nil) -> AnyObject {
+    func copy(with zone: NSZone? = nil) -> Any {
         let copied = Config()
         copied.adminPort = adminPort
         copied.port = port
