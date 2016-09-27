@@ -89,7 +89,7 @@ export SIMCTL_CHILD_dbpasswords="db1=seekrit1,db2=seekrit2"
 
  ```
 $curl -X PUT -H "Content-Type: application/json" -d '{
-    "port": 8888
+    "port": 8888,
     "dbpasswords": "db1=seekrit1,db2=seekrit2"
 }' "http://localhost:59850/start"
  ```
