@@ -76,6 +76,7 @@ readonly   |false         |Enables read-only mode
 revsLimit  |0             |Sets default max rev-tree depth for database (0 = using CBL default value)
 storage    |SQLite        |Set default storage engine: 'SQLite' or 'ForestDB'
 dbpasswords|Empty value   |Register passwords to open a database. Format: db1=pass1,db2=pass2,..
+ssl			 |false         |Serve over SSL with the identity name as 'LiteServ'
 
 If running the app with XCode, you can select `Edit Scheme...` of the scheme you want to run and then setup your environment variables from there. If running the app by using the `xcrun` command, you can set the environment variables by using export command and prefix each variable with the `SIMCTL_CHILD_` as below:
 

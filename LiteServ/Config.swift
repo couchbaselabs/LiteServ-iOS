@@ -15,6 +15,7 @@ class Config: NSCopying {
     var revsLimit: UInt = 0     // Sets default max rev-tree depth for database
     var storage = "SQLite"      // Set default storage engine: 'SQLite' or 'ForestDB'
     var dbpasswords: String?    // Register passwords to open a database <db1>=<passwd1>,<db2>=<passwd2>,...
+    var ssl = false             // Serve over SSL with 'LiteServ' as the identity name
     
     init() {
         var env = ProcessInfo.processInfo.environment
@@ -42,6 +43,10 @@ class Config: NSCopying {
         if let v = env["dbpasswords"] {
             self.dbpasswords = v
         }
+        
+        if let v = env["ssl"] {
+            self.ssl = ( v == "true")
+        }
     }
     
     func setValues(json: Dictionary<String, AnyObject>) {
@@ -68,6 +73,10 @@ class Config: NSCopying {
         if let v = json["dbpasswords"] as? String {
             self.dbpasswords = v
         }
+        
+        if let v  = json["ssl"] as? Bool {
+            self.ssl = v
+        }
     }
     
     func asJson() -> Dictionary<String, Any> {
@@ -76,6 +85,7 @@ class Config: NSCopying {
             "port": port,
             "readonly": readonly,
             "storage": storage,
+            "ssl": ssl,
         ];
         
         if self.revsLimit > 0 {
@@ -97,6 +107,7 @@ class Config: NSCopying {
         copied.revsLimit = revsLimit
         copied.storage = storage
         copied.dbpasswords = dbpasswords
+        copied.ssl = ssl
         return copied
     }
 }

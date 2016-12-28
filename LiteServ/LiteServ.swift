@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Security
 
 enum LiteServError: Error {
     case AdminError(description: String)
@@ -21,7 +22,7 @@ protocol LiteServDelegate {
     func didStopListener(liteServ: LiteServ)
 }
 
-class LiteServ {
+class LiteServ: NSObject, CBLListenerDelegate {
     var delegate: LiteServDelegate?
     var defaultConfig: Config
     
@@ -130,9 +131,14 @@ class LiteServ {
         
         // Create listener:
         listener = CBLListener(manager: manager!, port: UInt16(config.port))
+        listener!.delegate = self
         
-        // Start listener:
         do {
+            // Set SSL Identity if serving over SSL:
+            if (config.ssl) {
+                try listener!.setAnonymousSSLIdentityWithLabel("LiteServ")
+            }
+            // Start listener:
             try listener!.start()
             currentConfig = (config.copy() as! Config)
         } catch let error as NSError {
@@ -158,5 +164,11 @@ class LiteServ {
         currentConfig = nil
         
         delegate?.didStopListener(liteServ: self)
+    }
+    
+    // MARK: - CBLListenerDelegate
+    
+    func authenticateConnection(fromAddress address: Data, with trust: SecTrust?) -> String? {
+        return "";
     }
 }

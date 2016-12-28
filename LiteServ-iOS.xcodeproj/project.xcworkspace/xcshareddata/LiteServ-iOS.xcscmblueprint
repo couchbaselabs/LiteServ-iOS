@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "801176D4729EBF4054CD417EFC4D2EDE04F84746",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "801176D4729EBF4054CD417EFC4D2EDE04F84746" : 9223372036854775807,
+    "F6F96CA34C5878B0A9123C7C37855491A5E599DA" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D02B0672-4994-4134-B151-A5832CB9E4F4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "801176D4729EBF4054CD417EFC4D2EDE04F84746" : "LiteServ-iOS\/",
+    "F6F96CA34C5878B0A9123C7C37855491A5E599DA" : "LiteServ-iOS\/vendor\/GCDWebServer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LiteServ-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LiteServ-iOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/couchbaselabs\/liteserv-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "801176D4729EBF4054CD417EFC4D2EDE04F84746"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/swisspol\/GCDWebServer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F6F96CA34C5878B0A9123C7C37855491A5E599DA"
+    }
+  ]
+}
