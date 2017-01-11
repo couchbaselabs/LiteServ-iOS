@@ -42,7 +42,7 @@ class ViewController: UIViewController, LiteServDelegate {
     }
     
     func didStartListener(liteServ: LiteServ, onPort: UInt) {
-        listenerStatus = String(format: "Listener is listening on port %@.", onPort)
+        listenerStatus = String(format: "Listener is listening on port %d", onPort)
         updateStatus()
     }
     
