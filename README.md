@@ -31,7 +31,7 @@ Copy couchbase-lite-ios framework files into [Frameworks/iOS](https://github.com
  ```
  tvOS:
  ```
- $xcodebuild -scheme LiteServ-tvOS -sdk iphonesimulator -configuration Release -derivedDataPath build
+ $xcodebuild -scheme LiteServ-tvOS -sdk appletvsimulator -configuration Release -derivedDataPath build
  ```
  To build with SQLCipher, use `-scheme LiteServ-iOS-SQLCipher` for iOS and `-scheme LiteServ-tvOS-SQLCipher` for tvOS.
 
