@@ -773,6 +773,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/tvOS";
 				INFOPLIST_FILE = "LiteServ-tvOS/Info-SQLCipher.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -803,6 +804,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/tvOS";
 				INFOPLIST_FILE = "LiteServ-tvOS/Info-SQLCipher.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -929,6 +931,7 @@
 					"$(PROJECT_DIR)/Frameworks/iOS",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/iOS";
 				INFOPLIST_FILE = "LiteServ-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -957,6 +960,7 @@
 					"$(PROJECT_DIR)/Frameworks/iOS",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/iOS";
 				INFOPLIST_FILE = "LiteServ-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -984,6 +988,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/tvOS";
 				INFOPLIST_FILE = "LiteServ-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1014,6 +1019,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/tvOS";
 				INFOPLIST_FILE = "LiteServ-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1043,6 +1049,7 @@
 					"$(PROJECT_DIR)/Frameworks/iOS",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/iOS";
 				INFOPLIST_FILE = "LiteServ-iOS/Info-SQLCipher.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1071,6 +1078,7 @@
 					"$(PROJECT_DIR)/Frameworks/iOS",
 					"$(PROJECT_DIR)/Frameworks/tvOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Frameworks/iOS";
 				INFOPLIST_FILE = "LiteServ-iOS/Info-SQLCipher.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
