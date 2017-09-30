@@ -1,29 +1,33 @@
-#LiteServ-iOS
+# LiteServ-iOS
 
 LiteServ-iOS is a LiteServ app that runs on iOS or tvOS devices.
 
-##How to build and run?
+## How to build and run?
 
-###Requirement
+### Requirement
 - XCode 8
 
-###Get the code
- ```
- $git clone https://github.com/couchbaselabs/liteserv-ios.git
- $git submodule update --init
- ```
+### Get the code
+
+```
+$ git clone https://github.com/couchbaselabs/liteserv-ios.git
+$ git submodule update --init
+```
  
-###Install frameworks
+### Install frameworks
 Copy couchbase-lite-ios framework files into [Frameworks/iOS](https://github.com/couchbaselabs/liteserv-ios/tree/master/Frameworks/iOS) and [Frameworks/tvOS](https://github.com/couchbaselabs/liteserv-ios/tree/master/Frameworks/tvOS) directory. See the README file in those folders for more detail about what files to copy.
 
-###Build and run with XCode
+### Build and run with XCode
 1. Open LiteServ-iOS project with XCode.
 2. Select `LiteServ-iOS` scheme to run on iOS devices.
 3. Or select `LiteServ-tvOS` scheme to run on tvOS devices.
 4. If you want the App to build with SQLCipher instead of SQLite, select the scheme that ends with `-SQLCipher`.
 
-###Build and run with command lines (Simulator only)
-1. Build the app:
+If you get compile errors about `GCDWebServer.h` being missing, you need to update submodules (see step 2 of **Get The Code**.)
+
+### Build and run with command lines (Simulator only)
+
+#### 1. Build the app:
 
  iOS:
  ```
@@ -35,7 +39,7 @@ Copy couchbase-lite-ios framework files into [Frameworks/iOS](https://github.com
  ```
  To build with SQLCipher, use `-scheme LiteServ-iOS-SQLCipher` for iOS and `-scheme LiteServ-tvOS-SQLCipher` for tvOS.
 
-2. Run the simulator:
+#### 2. Run the simulator:
  ```
  $killall Simulator
  $open -a Simulator --args -CurrentDeviceUDID <YOUR SIMULATOR UUID>
@@ -55,7 +59,7 @@ Copy couchbase-lite-ios framework files into [Frameworks/iOS](https://github.com
 	 count=`xcrun simctl list | grep Booted | wc -l | sed -e 's/ //g'`
  done
  ```
-3. Install and run the app on the simulator:
+#### 3. Install and run the app on the simulator:
  ```
  $xcrun simctl uninstall booted com.couchbase.LiteServ-iOS
  $xcrun simctl install booted <PATH to LiteServ-iOS.app>
@@ -65,7 +69,7 @@ Copy couchbase-lite-ios framework files into [Frameworks/iOS](https://github.com
 
  Reference: https://coderwall.com/p/fprm_g/chose-ios-simulator-via-command-line--2 (Note: Some of the commands may be old.)
 
-##How to change default settings?
+## How to change default settings?
 Before running the app, you can setup environment variables to set the app settings. The app settings consist of:
 
 Name       | Default value| Description|
@@ -85,7 +89,7 @@ export SIMCTL_CHILD_port="8888"
 export SIMCTL_CHILD_dbpasswords="db1=seekrit1,db2=seekrit2"
 ```
 
-##How to use Admin port?
+## How to use Admin port?
 1. `PUT /start` : Start or restart the listener with JSON configuration.
 
  ```
