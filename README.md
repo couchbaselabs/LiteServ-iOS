@@ -74,7 +74,7 @@ Before running the app, you can setup environment variables to set the app setti
 
 Name       | Default value| Description|
 -----------|--------------|------------|
-adminPort  |59850         |Admin port to listen on
+adminPort  |59850         |Admin port to listen on (Cannot be changed via REST API)
 port       |49850         |Listener port to listen on
 readonly   |false         |Enables read-only mode
 revsLimit  |0             |Sets default max rev-tree depth for database (0 = using CBL default value)

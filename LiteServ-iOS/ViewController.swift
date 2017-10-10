@@ -13,11 +13,20 @@ class ViewController: UIViewController, LiteServDelegate {
     
     var liteServ: LiteServ?
     var adminStatus: String?
+    
     var listenerStatus: String?
+    var listenerStarted = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         startLiteServ()
+        NotificationCenter.default.addObserver(
+            forName: NSNotification.Name.UIApplicationDidBecomeActive,
+            object: nil, queue: nil, using: { (note) in
+                if let liteServ = self.liteServ, self.listenerStarted {
+                    liteServ.restart();
+                }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,21 +46,26 @@ class ViewController: UIViewController, LiteServDelegate {
     }
     
     func didFailStartAdmin(liteServ: LiteServ, error: String) {
+        listenerStarted = false;
         adminStatus = String(format: "Admin failed to start with error: ", error)
         updateStatus()
     }
     
     func didStartListener(liteServ: LiteServ, onPort: UInt) {
+        listenerStarted = true
         listenerStatus = String(format: "Listener is listening on port %d.", onPort)
         updateStatus()
     }
     
     func didFailStartListener(liteServ: LiteServ, error: String) {
+        listenerStarted = false;
         listenerStatus = String(format: "Listener failed to start with error: ", error)
         updateStatus()
+        self.liteServ = nil;
     }
     
     func didStopListener(liteServ: LiteServ) {
+        listenerStarted = false;
         listenerStatus = "Listener is stopped."
         updateStatus()
     }

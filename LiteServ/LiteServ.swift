@@ -35,12 +35,19 @@ class LiteServ: NSObject, CBLListenerDelegate {
         self.defaultConfig = config.copy() as! Config
     }
     
-    func start() {
+    public func start() {
         startAdmin(port: defaultConfig.adminPort)
         try! startListener(config: defaultConfig)
     }
     
-    func startAdmin(port: UInt) {
+    public func restart() {
+        let config = currentConfig != nil ? currentConfig! : defaultConfig
+        startAdmin(port: config.adminPort)
+        try! startListener(config: config);
+    }
+    
+    private func startAdmin(port: UInt) {
+        server?.stop();
         server = GCDWebServer()
         
         server!.addHandler(
@@ -99,7 +106,7 @@ class LiteServ: NSObject, CBLListenerDelegate {
         }
     }
     
-    func startListener(config: Config) throws {
+    private func startListener(config: Config) throws {
         stopListener()
         
         // Create Manager:
@@ -150,7 +157,7 @@ class LiteServ: NSObject, CBLListenerDelegate {
         delegate?.didStartListener(liteServ: self, onPort: UInt(listener!.port))
     }
     
-    func stopListener() {
+    private func stopListener() {
         if listener == nil {
             return
         }
