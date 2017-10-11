@@ -17,16 +17,36 @@ class ViewController: UIViewController, LiteServDelegate {
     var listenerStatus: String?
     var listenerStarted = false
     
+    var backgroundTask: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startLiteServ()
         NotificationCenter.default.addObserver(
-            forName: NSNotification.Name.UIApplicationDidBecomeActive,
+            forName: Notification.Name.UIApplicationDidBecomeActive,
             object: nil, queue: nil, using: { (note) in
                 if let liteServ = self.liteServ, self.listenerStarted {
                     liteServ.restart();
                 }
         })
+        
+        NotificationCenter.default.addObserver(
+            forName: Notification.Name.UIApplicationDidEnterBackground,
+            object: nil, queue: nil) { (note) in
+                self.backgroundTask = UIApplication.shared.beginBackgroundTask(
+                    expirationHandler: {
+                        self.backgroundTask = UIBackgroundTaskInvalid;
+                })
+        }
+        
+        NotificationCenter.default.addObserver(
+            forName: Notification.Name.UIApplicationWillEnterForeground,
+            object: nil, queue: nil) { (note) in
+                if self.backgroundTask != UIBackgroundTaskInvalid {
+                    UIApplication.shared.endBackgroundTask(self.backgroundTask)
+                    self.backgroundTask = UIBackgroundTaskInvalid
+                }
+        }
     }
 
     override func didReceiveMemoryWarning() {
