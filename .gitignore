@@ -20,6 +20,7 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
+.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
@@ -53,9 +54,10 @@ playground.xcworkspace
 Carthage/Build
 
 // Frameworks
-Frameworks/iOS/*.framework
-Frameworks/iOS/*.a
-Frameworks/iOS/*.h
-Frameworks/tvOS/*.framework
-Frameworks/tvOS/*.a
-Frameworks/tvOS/*.h
+Frameworks/**/*.framework
+Frameworks/**/*.a
+Frameworks/**/*.h
+Frameworks/**/*.m
+
+// App Files
+*.app
